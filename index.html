@@ -14,9 +14,21 @@
 	</table>
 	<br>
 	<form enctype="application/json" method="post" action="url" name="webhook">
-		Username : &nbsp; <input name="Username" value="Username"><br>
-		Avatar's url : <input name="avatar_url"><br>
-		Message : &nbsp; &nbsp; <input name="content" value="A message"><br>
+		<table>
+			<tr>
+				<td>Username : </td>
+				<td><input name="Username" value="Username"></td>
+			</tr>
+			<tr>
+				<td>Avatar's url : </td>
+				<td><input name="avatar_url"></td>
+			</tr>
+			<tr>
+				<td>Message : </td>
+				<td><input name="content" value="A message"></td>
+			</tr>
+		</table>
+		<br>
 		<button name="valider">Post</button>
 	</form>
 </body>
