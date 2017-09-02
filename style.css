@@ -1,0 +1,39 @@
+body{
+	margin-left: 100px;
+	background: #36393E;
+	color: hsla(0,0%,100%,.7);
+	font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-size: 0.9375rem;
+}
+
+textarea{
+	width: 50%;
+	outline: none;
+	background: #484B51;
+	border: 3px solid #7289DA;
+	border-radius: 5px;
+	resize: none;
+	font-weight: 400;
+	font-size: 0.9375rem;
+	line-height: 1.25rem;
+	letter-spacing: -0.025rem;
+	max-height: 300px;
+	min-height: 100px;
+	margin: 2px 2px 2px 0;
+	color: hsla(0,0%,100%,.7);
+}
+
+input{
+	outline: none;
+	background: #484B51;
+	border: 2px solid #7289DA;
+	border-radius: 5px;
+	color: hsla(0,0%,100%,.7);
+}
+
+.button {
+	background: #7289da;
+	border-radius: 3px;
+	padding: 5px 10px 5px 10px;
+	color: #fff;
+}

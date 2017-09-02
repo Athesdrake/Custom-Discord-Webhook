@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Custom Discord Webhook</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript">
 		var xhr = new XMLHttpRequest();
 
@@ -21,30 +22,20 @@
 	</script>
 </head>
 <body>
-	<table>
-		<tbody>
-			<tr>
-				<td>Url of the Discord Webhook</td>
-				<td><input style="width: 200px;" id="url" name="webhook-url" type="text" autocomplete="on"></td>
-			</tr>
-		</tbody>
-	</table>
 	<br>
-	<table>
-		<tr>
-			<td>Username : </td>
-			<td><input id="username" value="Username"></td>
-		</tr>
-		<tr>
-			<td>Avatar's url : </td>
-			<td><input id="avatar_url"></td>
-		</tr>
-		<tr>
-			<td>Message : </td>
-			<td><textarea id="content" value="A message"></textarea></td>
-		</tr>
-	</table>
 	<br>
-	<button onclick="post()">Post</button>
+	<div class="label">Url of the Discord Webhook : </div>
+	<div class="input"><input style="width: 90%;" form="1" id="url" name="webhook-url" type="text" autocomplete="on"></div>
+	<br>
+	<div class="label">Username : </div>
+	<div class="input"><input id="username" value="Username"></div>
+	<br>
+	<div class="label">Avatar's url : </div>
+	<div class="input"><input id="avatar_url"></div>
+	<br>
+	<div class="label">Message : </div>
+	<div class="input"><textarea id="content" placeholder="Type your message here ..."></textarea></div>
+	<br>
+	<input form="1" type="submit" class="button" onclick="post()">
 </body>
 </html>
