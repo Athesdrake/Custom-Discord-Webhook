@@ -7,7 +7,7 @@
 
 		function post() {
 			let url = document.getElementById('url').value
-			url = "htpps://discordapp.com/api/webhooks/"+/webhooks\/(\d+)\//.exec(url)[1]+"/"+/\/\d+\/(\w+)/.exec(url)[1]
+			url = "https://discordapp.com/api/webhooks/"+/webhooks\/(\d+)\//.exec(url)[1]+"/"+/\/\d+\/(\w+)/.exec(url)[1]
 			if (url!="") {
 				let data = {
 					"content"    : document.getElementById('content').value,
