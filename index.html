@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Custom Discord Webhook</title>
+</head>
+<body>
+	<table>
+		<tbody>
+			<tr>
+				<td>Url of the Discord Webhook</td>
+				<td><input name="url" type="text"></td>
+			</tr>
+		</tbody>
+	</table>
+	<form enctype="application/json" method="post" action="url" name="webhook">
+		Username :     <input name="Username" value="Username"><br>
+		Avatar's url : <input name="avatar_url"><br>
+		Message :      <input name="content" value="A message"><br>
+		<button value="Post" name="valider"></button>
+	</form>
+</body>
+</html>
