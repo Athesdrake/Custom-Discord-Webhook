@@ -7,14 +7,12 @@
 
 		function post() {
 			let url = document.getElementById('url').value
-			console.log(url)
 			if (url!="") {
 				let data = {
 					"content"    : document.getElementById('content').value,
 					"username"   : document.getElementById('username').value,
 					"avatar_url" : document.getElementById('avatar_url').value
 				}
-				console.log(url, data)
 				xhr.open("POST", url, true);
 				xhr.setRequestHeader('Content-Type', 'application/json');
 				xhr.send(JSON.stringify(data));
@@ -27,7 +25,7 @@
 		<tbody>
 			<tr>
 				<td>Url of the Discord Webhook</td>
-				<td><input id="url" type="text"></td>
+				<td><input style="width: 75%" id="url" type="text" autocomplete="on"></td>
 			</tr>
 		</tbody>
 	</table>
@@ -43,7 +41,7 @@
 		</tr>
 		<tr>
 			<td>Message : </td>
-			<td><input id="content" value="A message"></td>
+			<td><input style="width: 75%" id="content" value="A message"></td>
 		</tr>
 	</table>
 	<br>
