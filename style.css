@@ -36,4 +36,15 @@ input{
 	border-radius: 3px;
 	padding: 5px 10px 5px 10px;
 	color: #fff;
+	cursor: pointer;
+}
+
+.button:hover {
+	background: #677bc4;
+	border-color: #677bc4;
+}
+
+.button:active {
+	background: #5b6eae;
+	border-color: #5b6eae;
 }
