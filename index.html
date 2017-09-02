@@ -25,17 +25,17 @@
 	<br>
 	<br>
 	<div class="label">Url of the Discord Webhook : </div>
-	<div class="input"><input style="width: 50%;" form="1" id="url" name="webhook-url" type="text" autocomplete="on"></div>
+	<div class="input"><input style="width: 50%;" form="1" id="url" placeholder="https://discordapp.com/api/webhooks/{webhook.id}/{webhook.token}" name="webhook-url" type="text" autocomplete="on"></div>
 	<br>
 	<div class="label">Username : </div>
 	<div class="input"><input id="username" value="Username"></div>
 	<br>
 	<div class="label">Avatar's url : </div>
-	<div class="input"><input id="avatar_url"></div>
+	<div class="input"><input placeholder="http://fr.lipsum.com/images/banners/grey_234x60.gif" id="avatar_url"></div>
 	<br>
 	<div class="label">Message : </div>
 	<div class="input"><textarea id="content" placeholder="Type your message here ..."></textarea></div>
 	<br>
-	<input form="1" type="submit" class="button" onclick="post()">
+	<input form="1" type="submit" style="margin-left: calc(25% - 65px/2);" class="button" onclick="post()">
 </body>
 </html>
